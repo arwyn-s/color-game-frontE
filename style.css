@@ -1,7 +1,8 @@
 body {
     background: #232323;
     color: white;
-    
+    margin: 0;
+    font-family: "Montserrat",sans-serif;
 }
 .square {
     width: 30%;
@@ -9,10 +10,12 @@ body {
     padding-bottom: 30%;
     float:left;
     margin: 1.66%; 
+    border-radius: 15%;
+    transition: background 0.6s;
 }
 #container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 #stripe {
@@ -21,4 +24,44 @@ body {
     height: 30px;
     width: 100%;
     text-align: center;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1.1;
+    background-color: steelblue;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+h1 > span {
+    font-size: 200%;
+}
+.selected {
+    background-color: steelblue;
+    color: white;
+}
+button {
+    border: none;
+    background: none;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    outline: none;
+    
+}
+
+#messageDisplay {
+    display: inline-block;
+    width: 20%;
+}
+button:hover {
+    background-color: steelblue;
+    color: white;
 }
